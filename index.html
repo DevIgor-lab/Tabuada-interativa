@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Tabuada Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card">
+    <header>
+      <span class="eyebrow">JavaScript · Estrutura de repetição "for"</span>
+      <h1>Gerador de Tabuada Interativo</h1>
+      <p class="subtitle">Digite um número entre 1 e 10 para ver a tabuada de multiplicação completa.</p>
+    </header>
+
+    <form id="form-tabuada" novalidate>
+      <label for="numero">Número (1 a 10)</label>
+      <div class="input-row">
+        <input
+          type="number"
+          id="numero"
+          name="numero"
+          min="1"
+          max="10"
+          placeholder="Ex: 7"
+          required
+        >
+        <button type="submit">Gerar tabuada</button>
+      </div>
+      <p id="mensagem-erro" class="erro" hidden></p>
+    </form>
+
+    <section id="resultado" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
